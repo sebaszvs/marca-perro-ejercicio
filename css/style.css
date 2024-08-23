@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{ font-size: 3,5em;}
+h2{  font-size: 2,7em;}
+h3{font-size: 2em;}
+p{font-size: 1,25em;}
+ul{list-style: none;}
+li{font-size: 1,25em;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(10, 149, 230);
+}
+
+button:hover{
+    background-color:  rgb(30, 56, 207);
+}
+
+.navbar{
+    background-color: white;
+    height: 60px;
+    margin: 15px;
+    border-radius: 18px;
+    padding: 0,5rem;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-weight: bold;
+    color: rgb(6, 117, 182);
+    font-size: 24px;
+    transition: 0,3s color;
+}
+
+.navbar-brand:hover{
+    color:rgb(10, 149, 230) ;
+}
+
+
+.login {
+    background-color: rgb(10, 149, 230);
+    color: white;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0,4s background-color;
+    font-weight: bold;
+}
+.login:hover {
+    background-color: rgb(30, 56, 207);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    font-weight: 500;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active:hover{
+    color: rgb(10, 149, 230) ;
+
+}
+
+
+#hero{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(..//img/jugando.jpg);
+    background-repeat: no-repeat;
+    background-position: center center  ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#hero h1{
+    color: white;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: rgb(6, 117, 182);}
+
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracte .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracte li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(128, 122, 122);
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px){
+    #nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros h2{
+        margin-top: 0px;
+    }
+
+    #nosotros .img-container{
+        background-image: url(../img/lindo.jpg);
+        background-size: cover;
+        background-position: center center  ;
+        height: 400px;
+        width: 400px;
+
+    }
+
+
+    #caracte h2{
+        color: rgb(6, 117, 182);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #caracte .container{
+        padding-top: 0%;
+        text-align: center;
+    }
+
+    #caracte a{
+        color: skyblue;
+        text-decoration: none;
+    }
+
+    #caracte a:hover{
+        color: rgb(3, 168, 233);
+        text-decoration: none;
+    }
+
+    #contactanos .container{
+        padding-top: 10%;
+        border-radius: 0;
+       padding-left: 30%;
+        top: 50%;
+    }
+    
+    #productos h1{
+        
+        display: flex;
+        padding-top: 0,5%;
+        text-align: center;
+        justify-content: center;
+        font-weight: lighter;
+    }
+
+    #productos .Input-search{
+        float: left;
+        padding: 10px;
+        width: 25%;
+        border: none;
+        border-bottom: 1px solid ;
+        outline: 0;
+    }
+
+
+    #productos .select-order{
+        float: right;
+        padding: 10px;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+    }
+
+
+
+    #productos  .products-box{
+        height: 370px;
+        width: 400px;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    #productos  .products-box:hover{
+        text-decoration: none;
+        color: rgb(6, 117, 182);
+    }
+
+
+    #productos  .products-box img{
+        width: 70%;
+        transition: all 0,3s;
+    }
+
+    #productos  .products-box:hover img{
+        transform: scale(1);
+    }
+
+    #productos  .products-box h3{
+        font-size: 14px;
+        font-weight: normal;
+        margin: 5px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #productos  .products-box .offer{
+        color: blue;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    #productos  .products-box .offer.hidden{
+        visibility: hidden;
+    }
+    #productos  .products-box .precio{
+        font-size: 18px;
+    }
+
+    #productos  .products-box strong del{
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+
+    #productos  .paginacion{
+        text-align: center;
+        list-style: none;
+        font-size: 18px;
+    }
+
+    #productos  .paginacion li{
+        display: inline-block;
+        text-decoration: none;
+    }
+    #productos  .paginacion li a{
+        color: black;
+        padding: 3px;
+
+        text-align: center;
+        display: inline-block;
+        border: 1px solid;
+    }
+
+    #iniciarsesion .formulario{
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #iniciarsesion #formularioini{
+        display: flex;
+        padding: 50px;
+        flex-direction: column ;
+        width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+    }
+
+    #iniciarsesion #formularioini h1{
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #iniciarsesion #formularioini label, p{
+        font-size: 20px;
+        color: black;
+        margin-bottom: 10px;    
+    }
+
+    #iniciarsesion #formularioini  p:hover{
+        color: rgb(6, 117, 182);
+    }
+
+    #iniciarsesion #formularioini input:not([type="submit"]){
+        padding: 17px 11px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        background-color: white;
+        outline: none;
+        font-size: 16px;
+    }
+
+    #iniciarsesion #formularioini input[type="submit"]{
+        border: 1px solid #00ADEF;
+        color: #00ADEF;
+        outline: none;
+        padding: 17px 11px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        outline: none;
+        font-size: 16px;
+    }
+
+
+    
+    #iniciarsesion #formularioini #button-submit{
+        background-color: #00ADEF;
+        font-size: 15px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+
+    }
+
+    #iniciarsesion #formularioini #button-submit:hover{
+        background-color: #04b8ff;
+    }
+
+    #iniciarsesion #formularioini .recordar{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+}
