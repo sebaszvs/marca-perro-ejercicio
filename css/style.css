@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .body{
     margin: 0;
@@ -207,6 +210,11 @@ footer .container{
        padding-left: 30%;
         top: 50%;
     }
+
+    #contactanos .ejemplomodal{
+        text-align: center;
+        align-items: center;
+    }
     
     #productos h1{
         
@@ -310,7 +318,7 @@ footer .container{
     }
 
     #iniciarsesion .formulario{
-        padding-top: 50px;
+        padding-top: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
