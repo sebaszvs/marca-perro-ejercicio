@@ -52,6 +52,10 @@ button:hover{
     color:rgb(10, 149, 230) ;
 }
 
+.offcanvas{
+    color: rgb(6, 117, 182);
+}
+
 
 .login {
     background-color: rgb(10, 149, 230);
@@ -216,105 +220,42 @@ footer .container{
         align-items: center;
     }
     
-    #productos h1{
-        
-        display: flex;
-        padding-top: 0,5%;
+    #productos h2{
         text-align: center;
-        justify-content: center;
-        font-weight: lighter;
-    }
-
-    #productos .Input-search{
-        float: left;
-        padding: 10px;
-        width: 25%;
-        border: none;
-        border-bottom: 1px solid ;
-        outline: 0;
-    }
-
-
-    #productos .select-order{
-        float: right;
-        padding: 10px;
-        border: none;
-        outline: 0;
-        cursor: pointer;
-    }
-
-
-
-    #productos  .products-box{
-        height: 370px;
-        width: 400px;
-        text-align: center;
-        color: black;
-        text-decoration: none;
-
-    }
-
-    #productos  .products-box:hover{
-        text-decoration: none;
+        align-items: center;
         color: rgb(6, 117, 182);
-    }
-
-
-    #productos  .products-box img{
-        width: 70%;
-        transition: all 0,3s;
-    }
-
-    #productos  .products-box:hover img{
-        transform: scale(1);
-    }
-
-    #productos  .products-box h3{
-        font-size: 14px;
-        font-weight: normal;
-        margin: 5px;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    #productos  .products-box .offer{
-        color: blue;
-        text-transform: uppercase;
         font-weight: bold;
+        padding-bottom: 30px;
     }
 
-    #productos  .products-box .offer.hidden{
-        visibility: hidden;
-    }
-    #productos  .products-box .precio{
-        font-size: 18px;
+    #productos h4{
+        color: rgb(6, 117, 182)
     }
 
-    #productos  .products-box strong del{
-        font-size: 14px;
-        font-weight: normal;
-        margin-bottom: 5px;
+    #productos .card-img-top{
+        border-radius: 50px;
+        padding: 20px;
+    }
+    
+    #productos .card{
+        width: 25rem;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
-    #productos  .paginacion{
-        text-align: center;
-        list-style: none;
-        font-size: 18px;
+    #productos .card-body{
+        padding: 25px;
+        margin-top: -15px;
+
     }
 
-    #productos  .paginacion li{
-        display: inline-block;
-        text-decoration: none;
+    #productos .btn-dark{
+        border-radius: 50px;
+        width: 120px;
     }
-    #productos  .paginacion li a{
-        color: black;
-        padding: 3px;
 
-        text-align: center;
-        display: inline-block;
-        border: 1px solid;
+    #productos .btn-dark:hover{
+        background-color: rgb(6, 117, 182);
     }
 
     #iniciarsesion .formulario{
